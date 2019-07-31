@@ -218,15 +218,13 @@ lib.ssMetadata = [];
 
 		  TITLE_ARRAY.sort((a, b) => a[0].localeCompare(b[0]));
 		  TITLE_ARRAY.reverse();
-		  console.log(TITLE_ARRAY);
+		  
 
 		  var FIRST_Y = TopBlockCon.getChildByName('TopBtn_0').y + TopBlockCon.getChildByName('TopBtn_0').graphics.command.h + 50;
 		  for (var i = 0; i < TaskBlockCon.children.length; i++) {
 		    for (var q = 0; q < TITLE_ARRAY.length; q++) {
 		      if (TaskBlockCon.children[i].children[5].text == TITLE_ARRAY[q][0] && TaskBlockCon.children[i].name == TITLE_ARRAY[q][1]) {
 		        TaskBlockCon.children[i].y = FIRST_Y + q * 265;
-		        // TITLE_ARRAY[q] = 0;
-		        console.log(FIRST_Y, TaskBlockCon.children[i].y);
 		        break;
 		      }
 		    }
@@ -367,7 +365,6 @@ lib.ssMetadata = [];
 		  Sort_Tasks_Blocks.bind(this)();
 		  ACTIVE_TAB = t.currentTarget.name.substr(t.currentTarget.name.indexOf('_') + 1);
 		  TaskBlockCon.y = 0;
-		  console.log(TaskBlockCon.y);
 		}
 		// Разное-----------------------------------------------------------------------
 		function Update_Task_Doc(Task) {
