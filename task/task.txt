@@ -1,2 +1,0 @@
-Task_1 = {Title: 'Task1', MainText: 'Here is you text!', Active: true};
-Task_2 = {Title: 'Task2', MainText: 'Check2', Active: false};
